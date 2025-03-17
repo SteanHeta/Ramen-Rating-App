@@ -1,0 +1,53 @@
+body { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-items: center;
+}
+header {
+    background-color: transparent;
+    color: white;
+    justify-content: center;
+}
+#Ramen options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ramen-image {
+    width: 160px;
+    height: 160px;
+    margin: 12px;
+    cursor: pointer;
+}
+#Ramen info {
+   text-align: center;
+   
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 10px;
+    top: 0;
+    width: 100%;
+
+}
+.detail-image {
+    width: 250px;
+    height: 250px;
+}
+.image-container {
+    position: relative;
+}
+#Review Form {
+    margin-top: 50px;
+}
+.form-group {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    align-items: center;
+}
+.form-group label {
+    margin-bottom: 8px;
+}
+
