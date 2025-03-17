@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body { 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-items: center;
@@ -30,10 +31,31 @@ header {
     width: 100%;
 
 }
+=======
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#Ramen-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 20px auto;
+
+}
+
+>>>>>>> f18fe50 (creates first commit)
 .detail-image {
     width: 250px;
     height: 250px;
 }
+<<<<<<< HEAD
 .image-container {
     position: relative;
 }
@@ -51,3 +73,50 @@ header {
     margin-bottom: 8px;
 }
 
+=======
+.ramen-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.image-container {
+    position: relative;
+    justify-content: center;
+}
+.image-overlay {
+    position: absolute;
+    bottom: 2px;
+    top: 2px;
+    width: 120%;
+    padding: 12px;
+
+}
+
+
+#Ramen info {
+    text-align: center;
+}
+#Review-Form {
+   margin-top: 40px;
+}
+.review-section {
+    margin-bottom: 12px;
+    
+}
+.form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+}
+.group label {
+    margin-bottom: 8px;
+}
+
+
+
+
+>>>>>>> f18fe50 (creates first commit)

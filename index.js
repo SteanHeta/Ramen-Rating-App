@@ -49,11 +49,19 @@ const RamenMenu = [
 const ramenInfoDiv = document.getElementById("Ramen info");
 const ramenMenuDiv = document.getElementById("Ramen options");
 const reviewForm = document.getElementById("Review Form");
+<<<<<<< HEAD
 const overallRatingElement = document.querySelector(".overall-rating");
 const commentElement = document.querySelector(".comment");
 const detailImage = document.querySelector(".detail-image");
 const nameElement = document.querySelector(".name");
 const restaurantElement = document.querySelector(".restaurant");
+=======
+const detailImage = document.querySelector(".detail-image");
+const nameElement = document.querySelector(".name");
+const restaurantElement = document.querySelector(".restaurant");
+const overallRatingElement = document.querySelector(".overall-rating");
+const commentElement = document.querySelector(".comment");
+>>>>>>> f18fe50 (creates first commit)
 
 
 function displayRamenMenu () {
@@ -73,10 +81,18 @@ function handleClick(ramen) {
     
     detailImage.src = ramen.image;
     detailImage.alt = ramen.name;
+<<<<<<< HEAD
     nameElement.textContent = ramen.name;
     restaurantElement.textContent = ramen.restaurant;
     overallRatingElement.textContent = ramen.rating;
     commentElement.textContent = ramen.comment;
+=======
+    overallRatingElement.textContent = ramen.rating;
+    commentElement.textContent = ramen.comment;
+    nameElement.textContent = ramen.name;
+    restaurantElement.textContent = ramen.restaurant;
+
+>>>>>>> f18fe50 (creates first commit)
 }    
 function handleFormSubmit(event) {
     event.preventDefault();
@@ -102,5 +118,9 @@ document.addEventListener("DOMContentLoaded",
     function () {
         displayRamenMenu();
         setupEventListeners();
+<<<<<<< HEAD
         
+=======
+        addSubmitListener();
+>>>>>>> f18fe50 (creates first commit)
     });
