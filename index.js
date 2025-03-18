@@ -46,9 +46,9 @@ const RamenMenu = [
     },
 ];
 
-const ramenInfoDiv = document.getElementById("Ramen info");
-const ramenMenuDiv = document.getElementById("Ramen options");
-const reviewForm = document.getElementById("Review Form");
+const ramenInfoDiv = document.getElementById("ramen-info");
+const ramenMenuDiv = document.getElementById("ramen-options");
+const reviewForm = document.getElementById("review-form");
 const overallRatingElement = document.querySelector(".overall-rating");
 const commentElement = document.querySelector(".comment");
 const detailImage = document.querySelector(".detail-image");
@@ -70,12 +70,11 @@ function displayRamenMenu () {
 }
 
 function handleClick(ramen) {
-    
     detailImage.src = ramen.image;
     detailImage.alt = ramen.name;
     nameElement.textContent = ramen.name;
     restaurantElement.textContent = ramen.restaurant;
-    overallRatingElement.textContent = ramen.rating;
+    overallRatingElement.textContent = ramen.rating.toFixed(1);
     commentElement.textContent = ramen.comment;
 }    
 function handleFormSubmit(event) {
@@ -86,8 +85,8 @@ function handleFormSubmit(event) {
         id: RamenMenu.length + 1,
         name: formData.get("Dish"),
         restaurant: formData.get("Restaurant"),
-        image: formData.get("Image") || "/image/default.jpg",
-        rating: parseFloat(formData.get("rating")),
+        image: formData.get("Image") || "/image/placeholder.jpg",
+        rating: parseFloat(formData.get("rating")) || 0,
         comment: formData.get("comment")
     };
     RamenMenu.push(newRamen);
@@ -102,5 +101,5 @@ document.addEventListener("DOMContentLoaded",
     function () {
         displayRamenMenu();
         setupEventListeners();
-        addSubmitListener();
+    
     });
