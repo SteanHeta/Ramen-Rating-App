@@ -102,6 +102,5 @@ document.addEventListener("DOMContentLoaded",
     function () {
         displayRamenMenu();
         setupEventListeners();
-        
         addSubmitListener();
     });
